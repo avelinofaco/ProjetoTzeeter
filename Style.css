@@ -1,0 +1,121 @@
+body{
+    background-color: white;
+    color: rgb(15, 20, 25);
+    margin-left: 20px;
+}
+.navegacao ul{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.navegacao a{
+    display: block;
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navegacao a:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 20px;
+}
+
+#foto{
+    border-radius: 50%;
+}
+
+.links ul{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+}
+
+.seguidor ul { 
+    list-style-type: none; 
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;   
+}
+.seguidor a{
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+    margin-right: 10px; 
+}
+.seguidor a:hover { 
+    text-decoration: underline;
+}
+.seguidor .num { color: rgb(15, 20, 25);
+     font-weight: bold;
+}
+
+
+.informacao{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.dadoTweet a{
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+.dadoTweet a:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+nav a{
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+}
+
+nav #Reply:hover{
+    background-color:rgba(29, 155, 240, 0.1) ;
+    color:rgba(29, 155, 240, 1) ;
+    border-radius: 15px;
+    padding: 5px;
+}
+nav #Retzeet:hover{
+    background-color:rgba(0, 186, 124, 0.1) ;
+    color:rgba(0, 186, 124, 1);
+    border-radius: 15px;
+    padding: 5px;
+}
+nav #Like:hover{
+    background-color:rgba(249, 24, 128, 0.1) ;
+    color:rgba(249, 24, 128, 1);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+section > h4{
+    color:rgb(15, 20, 25);
+}
+
+.redeSocial{
+    color: rgb(83, 100, 113);
+}
+.descricao{
+    color: rgb(15, 20, 25);
+}
+.tempo{
+    color: rgb(83, 100, 113);
+}
+
+/* Pseudo-classes para destacar o primeiro link na navegação */ 
+.navegacao li:first-child a:hover { 
+    font-weight: bold; 
+    background-color: aquamarine;
+} 
+
+.dadoTweet a:nth-child(3):hover { 
+    background-color: rgba(179, 0, 0, 0.877);
+    border-radius: 20px; 
+    padding: 5px;
+}
