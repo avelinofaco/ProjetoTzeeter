@@ -1,121 +1,176 @@
-body{
-    background-color: white;
-    color: rgb(15, 20, 25);
-    margin-left: 20px;
-}
-.navegacao ul{
-    list-style-type: none;
-    margin-bottom: 15px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f3;
+    margin: 0;
+    padding: 0;
 }
 
-.navegacao a{
+.container {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 0.7fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+
+.edit-dados{
     display: block;
-    color: rgb(15, 20, 25);
+   
+}
+.left-column,
+.center-column,
+.right-column {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.left-column .menu li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.menu a {
     text-decoration: none;
-    padding: 10px 15px;
-}
-.navegacao a:hover{
-    background-color: rgba(15, 25, 20, 0.1);
-    border-radius: 20px;
-}
-
-#foto{
-    border-radius: 50%;
-}
-
-.links ul{
-    list-style-type: none;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-}
-.links a{
-    text-decoration: none;
-    color: rgb(83, 100, 113);
-}
-
-.seguidor ul { 
-    list-style-type: none; 
-    width: 50%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;   
-}
-.seguidor a{
-    text-decoration: none;
-    color: rgb(83, 100, 113);
-    margin-right: 10px; 
-}
-.seguidor a:hover { 
-    text-decoration: underline;
-}
-.seguidor .num { color: rgb(15, 20, 25);
-     font-weight: bold;
-}
-
-
-.informacao{
     display: flex;
     align-items: center;
-    gap: 7px;
-}
-
-.dadoTweet a{
-    color: rgb(15, 20, 25);
-    text-decoration: none;
-}
-.dadoTweet a:hover{
-    background-color: rgba(15, 25, 20, 0.1);
+    gap: 10px;
+    color: #333;
+    padding: 5px 10px;
     border-radius: 20px;
-    padding: 5px;
 }
 
-nav a{
-    color: rgb(83, 100, 113);
+.menu a:hover {
+    background: #e8f5fd;
+    color: #1da1f2;
+}
+
+.tweet-button {
+    background: #1da1f2;
+    color: #fff;
+    padding: 10px 20px; /* Certifique-se de que os dois botões têm o mesmo padding */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px; /* Garante o mesmo tamanho de texto */
+    width: auto; /* Define que o botão terá largura automática */
+    text-align: center;
+}
+
+.edit-profile {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Mesmo padding do botão Tweet */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px; /* Mesmo tamanho de texto do botão Tweet */
+    width: auto; /* Remove quaisquer larguras fixas */
+    text-align: center;
+}
+
+
+.tweet-actions a {
+    margin-right: 15px;
+    color: #555;
     text-decoration: none;
 }
 
-nav #Reply:hover{
-    background-color:rgba(29, 155, 240, 0.1) ;
-    color:rgba(29, 155, 240, 1) ;
-    border-radius: 15px;
-    padding: 5px;
-}
-nav #Retzeet:hover{
-    background-color:rgba(0, 186, 124, 0.1) ;
-    color:rgba(0, 186, 124, 1);
-    border-radius: 15px;
-    padding: 5px;
-}
-nav #Like:hover{
-    background-color:rgba(249, 24, 128, 0.1) ;
-    color:rgba(249, 24, 128, 1);
-    border-radius: 15px;
-    padding: 5px;
+.tabs {
+    display: flex; /* Define o contêiner como flex */
+    justify-content: space-around; /* Cria espaços iguais entre os links */
+    align-items: center; /* Garante alinhamento vertical dos itens */
+    border-bottom: 1px solid #ddd; /* Adiciona uma linha de separação */
+    padding: 10px 0; /* Adiciona espaço vertical */
 }
 
-section > h4{
-    color:rgb(15, 20, 25);
+.tabs a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #555; /* Define a cor padrão do texto */
+    padding: 10px 20px; /* Adiciona espaço interno */
+    border-radius: 20px; /* Torna os botões arredondados */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza as alterações de cor */
 }
 
-.redeSocial{
-    color: rgb(83, 100, 113);
-}
-.descricao{
-    color: rgb(15, 20, 25);
-}
-.tempo{
-    color: rgb(83, 100, 113);
+.tabs a:hover {
+    background-color: #e8f5fd; /* Define a cor de fundo para hover e ativo */
+    color: #1da1f2; /* Define a cor do texto para hover e ativo */
 }
 
-/* Pseudo-classes para destacar o primeiro link na navegação */ 
-.navegacao li:first-child a:hover { 
-    font-weight: bold; 
-    background-color: aquamarine;
-} 
+.tweet-actions a:hover {
+    color: #1da1f2;
+}
 
-.dadoTweet a:nth-child(3):hover { 
-    background-color: rgba(179, 0, 0, 0.877);
-    border-radius: 20px; 
-    padding: 5px;
+.right-column .search {
+    display: flex;
+    align-items: center;
+    background: #eff3f4;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.suggestions .suggestion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.suggestions .suggestion img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.suggestions .suggestion button {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+aside #pesquisar{
+    border: none;
+    background: #eff3f4;
+}
+
+.show-more {
+    text-decoration: none;
+    color: #1da1f2;
+    display: block;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .left-column .menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.left-column .menu i {
+    font-size: 24px; /* Ajuste conforme necessário */
+}
+
+
+@media (max-width: 768px) {
+    .right-column {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr 2fr;
+    }
 }
