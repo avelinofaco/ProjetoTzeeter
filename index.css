@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 0.7fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+
+.edit-dados{
+    display: block;
+   
+}
+.left-column,
+.center-column,
+.right-column {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.left-column .menu li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.menu a:hover {
+    background: #e8f5fd;
+    color: #1da1f2;
+}
+
+.tweet-button {
+    background: #1da1f2;
+    color: #fff;
+    padding: 10px 20px; /* Certifique-se de que os dois botões têm o mesmo padding */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px; /* Garante o mesmo tamanho de texto */
+    width: auto; /* Define que o botão terá largura automática */
+    text-align: center;
+}
+
+.profile-header {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    background: #fff;
+}
+
+dialog {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closeModal {
+    background: #ee6e5d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.post-section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    margin-top: 10px;
+}
+.post-container {
+    display: flex;
+    align-items: center;
+}
+.post-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post-input {
+    flex-grow: 1;
+}
+.post-input input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+}
+.post-privacy {
+    color: #1DA1F2;
+    font-size: 14px;
+    cursor: pointer;
+}
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.post-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #1DA1F2;
+}
+.post-button {
+    background: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tweet-actions a {
+    margin-right: 15px;
+    color: #555;
+    text-decoration: none;
+}
+
+.tabs {
+    display: flex; /* Define o contêiner como flex */
+    justify-content: space-around; /* Cria espaços iguais entre os links */
+    align-items: center; /* Garante alinhamento vertical dos itens */
+    border-bottom: 1px solid #ddd; /* Adiciona uma linha de separação */
+    padding: 10px 0; /* Adiciona espaço vertical */
+}
+
+.tabs a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #555; /* Define a cor padrão do texto */
+    padding: 10px 20px; /* Adiciona espaço interno */
+    border-radius: 20px; /* Torna os botões arredondados */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza as alterações de cor */
+}
+
+.tabs a:hover {
+    background-color: #e8f5fd; /* Define a cor de fundo para hover e ativo */
+    color: #1da1f2; /* Define a cor do texto para hover e ativo */
+}
+
+.tweet-actions a:hover {
+    color: #1da1f2;
+}
+
+.right-column .search {
+    display: flex;
+    align-items: center;
+    background: #eff3f4;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.suggestions .suggestion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.suggestions .suggestion img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.suggestions .suggestion button {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+aside #pesquisar{
+    border: none;
+    background: #eff3f4;
+}
+
+.show-more {
+    text-decoration: none;
+    color: #1da1f2;
+    display: block;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .left-column .menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.left-column .menu i {
+    font-size: 24px; /* Ajuste conforme necessário */
+}
+
+
+@media (max-width: 768px) {
+    .right-column {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr 2fr;
+    }
+}
