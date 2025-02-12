@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9b9999;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+.logo {
+    width: 70px;
+    margin-bottom: 10px;
+}
+h2 {
+    margin-bottom: 30px;
+}
+label {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+}
+.input-container {
+    position: relative;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 30px;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: none;
+}
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    display: none;
+}
+.icon.success {
+    color: green;
+}
+.icon.error {
+    color: red;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+
+.redefinirSenha{
+    text-align: left;
+    display: block;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#email-error {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    display: none;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}

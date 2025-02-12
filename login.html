@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css/login.css">
+    <title>Login - Tzeet</title>
+    
+</head>
+<body>
+    <div class="container">
+        <img src="./img/tiziu.png" alt="Tzeet Logo" class="logo">
+        <h2>Entre no Tzeet agora mesmo</h2>
+        <form action="dashboard.html" method="POST">
+            <label for="email">Email</label>
+            <div class="input-container">
+                <input type="email" id="email" name="email" required oninput="validateForm()">
+                <span id="email-icon" class="icon"></span>
+            </div>
+            <p class="error-message" id="email-error">Informe um email válido</p>
+            <label for="password">Password</label>
+            <div class="input-container">
+                <input type="password" id="password" name="password" required oninput="validateForm()">
+                <span id="password-icon" class="icon"></span>
+            </div>
+            <a href="#" class="redefinirSenha">Esqueceu a senha?</a>
+            <button type="submit" id="submit-button" disabled>
+                Entrar <span id="button-icon" class="icon success" style="display: none;">&#10004;</span>
+            </button>
+        </form>
+        
+        <div class="links">
+           <p>Não tem uma conta?</p>
+           <a href="signup.html">Inscreva-se</a>
+        </div>
+    </div>
+    <script src="./Script.js/login.js"></script>
+</body>
+</html>

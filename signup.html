@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css/signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Cadastro - Tzeet</title>
+</head>
+<body>
+    <div class="container">
+        <div class="close">
+            <h2>Criar conta</h2>
+            <a href="login.html" ><i class="bi bi-x-lg"></i></a>
+        </div>
+        
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            <span class="error-message"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <span class="error-message"></span>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <span class="error-message"></span>
+
+            <label for="confirm-password">Confirmação da senha:</label>
+            <input type="password" id="confirm-password" required>
+            <span class="error-message"></span>
+
+            <label>Data de nascimento</label>
+            <p>Isso não será exibido publicamente. Confirme sua própria idade.</p>
+            <div class="dob-container">
+                <select id="month" required>
+                    <option value="">Mês</option>
+                </select>
+                <span class="error-message"></span>
+                <select id="day" required>
+                    <option value="">Dia</option>
+                </select>
+                <span class="error-message"></span>
+                <select id="year" required>
+                    <option value="">Ano</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="checkbox-container">
+                <p>Receba e-mails sobre sua atividade no Twitter e recomendações.</p>
+                <input type="checkbox" id="receive-emails">
+            </div>
+            
+            <p>Você concorda com nossos Termos e Política de Cookies?</p>
+            <div class="radio-container">
+                <input type="radio" id="agree-yes" name="agree" value="yes"> <label for="agree-yes">Sim</label>
+                <input type="radio" id="agree-no" name="agree" value="no"> <label for="agree-no">Não</label>
+            </div>
+            
+            <button type="submit" class="submit-btn" disabled>Se inscrever</button>
+        </form>
+    </div>
+    <script src="./Script.js/signup.js"></script>
+</body>
+</html>
